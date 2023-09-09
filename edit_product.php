@@ -69,7 +69,6 @@
     if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["id"])) {
         $product_id = $_GET["id"];
 
-        // Lấy thông tin sản phẩm cần sửa
         $sql = "SELECT * FROM tbSanpham WHERE id = $product_id";
         $result = $conn->query($sql);
 
